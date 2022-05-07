@@ -1,6 +1,0 @@
-framework module MiraiSDK {
-  umbrella header "MiraiSDK-umbrella.h"
-
-  export *
-  module * { export * }
-}

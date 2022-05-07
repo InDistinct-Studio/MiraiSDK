@@ -1,6 +1,0 @@
-framework module Pods_MiraiSDK_Example {
-  umbrella header "Pods-MiraiSDK_Example-umbrella.h"
-
-  export *
-  module * { export * }
-}
