@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'northanapon' => 'nor.thanapon@gmail.com' }
-  s.source           = { :http => 'https://github.com/InDistinct-Studio/MiraiSDK/releases/download/v1.0.2/MiraiSDK-v1.0.2.zip' }
+  s.source           = { :http => 'https://github.com/InDistinct-Studio/MiraiSDK/releases/download/1.0.2/MiraiSDK-v1.0.2.zip' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '11.0'
