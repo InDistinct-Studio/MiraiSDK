@@ -1,0 +1,770 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E32657FE49FF0B06FACB0E0CCBF5FA8 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54059F1A09A8C45AF48925BE3FAEF5E /* ReplaceMe.swift */; };
+		5789B2889BECA10375DC34C96D26398A /* MiraiSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 54986AE42687F7DE0FE08CB7C1C82C3C /* MiraiSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		726DDCAD2549CAF9581E1728A7E7F7AB /* Pods-MiraiSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA994C6008781CD30E813B8067DEB2BA /* Pods-MiraiSDK_Example-dummy.m */; };
+		7B197284996EE31ED5C86912E8A82FCA /* Pods-MiraiSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 58219E17FC9D27C7F9B8A1BE6EE58B08 /* Pods-MiraiSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B41D2AE4D77A3953B4D491B4E0327F0 /* Pods-MiraiSDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8804620D72E816FF1171CCC9B704F91 /* Pods-MiraiSDK_Tests-dummy.m */; };
+		9D68DAD82590A56FBC65F178B74C034E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		B59276BC048F6DF59928BD1B84E5633A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C1DC11A1C31590B024DABD6F62A4B6EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		D1D790C6B083607FCD3EF99E599A4A56 /* Pods-MiraiSDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 851ECDE5C785E1D4BC6419378588A014 /* Pods-MiraiSDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F382C8240784EBF670EE04291C259DA2 /* MiraiSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9200397CA5D35B3AE16A858CBCB74217 /* MiraiSDK-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B21914280EDC17134BDE544CF80303F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 428274D6053D8EA14E3E7BB804F78FBF;
+			remoteInfo = "Pods-MiraiSDK_Example";
+		};
+		41F5EBAA638B2263F07FC43AAB5407CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 366F4338B1A9DAA0A39DA6D13082508D;
+			remoteInfo = MiraiSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		058809E0371453839D0AFB2664CE532A /* MiraiSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MiraiSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0EA3C8FA1AE14DB25220D6CDC9F9D96C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		10B40DF4C2A34A1AB9B822A03BE96806 /* Pods-MiraiSDK_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MiraiSDK_Tests"; path = Pods_MiraiSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12338C69BC3DFBC2CF704356697063C5 /* MiraiSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MiraiSDK.release.xcconfig; sourceTree = "<group>"; };
+		1395C1C1752B0A19C93D54110D7C576E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		22270B9585339AA53F8294D9B86BE270 /* MiraiSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MiraiSDK.modulemap; sourceTree = "<group>"; };
+		3AAE4E4FDE870007FE8772005A74C851 /* Pods-MiraiSDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MiraiSDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3AB313333627455E1F89245C130C33C9 /* Pods-MiraiSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MiraiSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
+		53E27575FEC74A15E746B501327F0F8B /* Pods-MiraiSDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MiraiSDK_Example.modulemap"; sourceTree = "<group>"; };
+		54986AE42687F7DE0FE08CB7C1C82C3C /* MiraiSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MiraiSDK-umbrella.h"; sourceTree = "<group>"; };
+		58219E17FC9D27C7F9B8A1BE6EE58B08 /* Pods-MiraiSDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MiraiSDK_Example-umbrella.h"; sourceTree = "<group>"; };
+		5C5128001CB31D7C4F32B229ABB010DA /* Pods-MiraiSDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MiraiSDK_Example-frameworks.sh"; sourceTree = "<group>"; };
+		6297C504A0377B2FA3FEA8304462E64B /* Pods-MiraiSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MiraiSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		6A8B0FFE2C1F7F87F55F2CF6486359D8 /* Pods-MiraiSDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MiraiSDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		78C63E9AB43B8A4830D881AA0585007C /* MiraiSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MiraiSDK-prefix.pch"; sourceTree = "<group>"; };
+		8118F837F292BF5F8E4453F971278232 /* Pods-MiraiSDK_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MiraiSDK_Tests-Info.plist"; sourceTree = "<group>"; };
+		851ECDE5C785E1D4BC6419378588A014 /* Pods-MiraiSDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MiraiSDK_Tests-umbrella.h"; sourceTree = "<group>"; };
+		86127D0007A643568B3C760BB1A81A81 /* MiraiSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MiraiSDK-Info.plist"; sourceTree = "<group>"; };
+		9200397CA5D35B3AE16A858CBCB74217 /* MiraiSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MiraiSDK-dummy.m"; sourceTree = "<group>"; };
+		92DCE497EF20D825CA13C8417B50023B /* MiraiSDK */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MiraiSDK; path = MiraiSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93E32EE61D3128CF337C0BF5E78612A6 /* Pods-MiraiSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MiraiSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		93E9FE66838457419031ED36CB7C6A2F /* Pods-MiraiSDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MiraiSDK_Tests.modulemap"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A9BDDFFD80994DDBDF2338B5A76D6EE4 /* Pods-MiraiSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MiraiSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B8804620D72E816FF1171CCC9B704F91 /* Pods-MiraiSDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MiraiSDK_Tests-dummy.m"; sourceTree = "<group>"; };
+		CA994C6008781CD30E813B8067DEB2BA /* Pods-MiraiSDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MiraiSDK_Example-dummy.m"; sourceTree = "<group>"; };
+		E4DFFB9BEFD07D43E9C5152E24E17F1B /* Pods-MiraiSDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MiraiSDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		E62D75573432BE7BE079543FBBFF7C8D /* Pods-MiraiSDK_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MiraiSDK_Example"; path = Pods_MiraiSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F54059F1A09A8C45AF48925BE3FAEF5E /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = MiraiSDK/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		F82D8095C4BB98B32C318B09646F3030 /* MiraiSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MiraiSDK.debug.xcconfig; sourceTree = "<group>"; };
+		FE67F958962B6C916816C5AC9A8F5617 /* Pods-MiraiSDK_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MiraiSDK_Example-Info.plist"; sourceTree = "<group>"; };
+		FF11C45AC797931F13D7AE4FECBFBA27 /* Pods-MiraiSDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MiraiSDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		128522322E7C59CB2A9F8A7DCED6563A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1DC11A1C31590B024DABD6F62A4B6EA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A342E208CDFBC6546318A4FA397E867B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D68DAD82590A56FBC65F178B74C034E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C889E65D9B6F539BE360CFC394448133 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B59276BC048F6DF59928BD1B84E5633A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BC3CDBC77A2EAB63BC7B12E546D9D64 /* Pods-MiraiSDK_Example */ = {
+			isa = PBXGroup;
+			children = (
+				53E27575FEC74A15E746B501327F0F8B /* Pods-MiraiSDK_Example.modulemap */,
+				6A8B0FFE2C1F7F87F55F2CF6486359D8 /* Pods-MiraiSDK_Example-acknowledgements.markdown */,
+				E4DFFB9BEFD07D43E9C5152E24E17F1B /* Pods-MiraiSDK_Example-acknowledgements.plist */,
+				CA994C6008781CD30E813B8067DEB2BA /* Pods-MiraiSDK_Example-dummy.m */,
+				5C5128001CB31D7C4F32B229ABB010DA /* Pods-MiraiSDK_Example-frameworks.sh */,
+				FE67F958962B6C916816C5AC9A8F5617 /* Pods-MiraiSDK_Example-Info.plist */,
+				58219E17FC9D27C7F9B8A1BE6EE58B08 /* Pods-MiraiSDK_Example-umbrella.h */,
+				93E32EE61D3128CF337C0BF5E78612A6 /* Pods-MiraiSDK_Example.debug.xcconfig */,
+				3AB313333627455E1F89245C130C33C9 /* Pods-MiraiSDK_Example.release.xcconfig */,
+			);
+			name = "Pods-MiraiSDK_Example";
+			path = "Target Support Files/Pods-MiraiSDK_Example";
+			sourceTree = "<group>";
+		};
+		2C3989477A7DBE3A5D872F1EDBDD12BA /* MiraiSDK */ = {
+			isa = PBXGroup;
+			children = (
+				F54059F1A09A8C45AF48925BE3FAEF5E /* ReplaceMe.swift */,
+				9094049E093ADFE742F28EC7271AEF8A /* Pod */,
+				FC91F1649DC6F83A3F0AAC773D96C061 /* Support Files */,
+			);
+			name = MiraiSDK;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		9094049E093ADFE742F28EC7271AEF8A /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				0EA3C8FA1AE14DB25220D6CDC9F9D96C /* LICENSE */,
+				058809E0371453839D0AFB2664CE532A /* MiraiSDK.podspec */,
+				1395C1C1752B0A19C93D54110D7C576E /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		C1F86654319DD0BC34BCB42B9154979C /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C3989477A7DBE3A5D872F1EDBDD12BA /* MiraiSDK */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				C1F86654319DD0BC34BCB42B9154979C /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				EF6AE4985F34704DE83865AE2AE15B41 /* Products */,
+				D1B53119949D3E8E0D89A741453CAC46 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D1B53119949D3E8E0D89A741453CAC46 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1BC3CDBC77A2EAB63BC7B12E546D9D64 /* Pods-MiraiSDK_Example */,
+				DC7BDC78593E39666154849E314B3A0D /* Pods-MiraiSDK_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC7BDC78593E39666154849E314B3A0D /* Pods-MiraiSDK_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				93E9FE66838457419031ED36CB7C6A2F /* Pods-MiraiSDK_Tests.modulemap */,
+				3AAE4E4FDE870007FE8772005A74C851 /* Pods-MiraiSDK_Tests-acknowledgements.markdown */,
+				FF11C45AC797931F13D7AE4FECBFBA27 /* Pods-MiraiSDK_Tests-acknowledgements.plist */,
+				B8804620D72E816FF1171CCC9B704F91 /* Pods-MiraiSDK_Tests-dummy.m */,
+				8118F837F292BF5F8E4453F971278232 /* Pods-MiraiSDK_Tests-Info.plist */,
+				851ECDE5C785E1D4BC6419378588A014 /* Pods-MiraiSDK_Tests-umbrella.h */,
+				A9BDDFFD80994DDBDF2338B5A76D6EE4 /* Pods-MiraiSDK_Tests.debug.xcconfig */,
+				6297C504A0377B2FA3FEA8304462E64B /* Pods-MiraiSDK_Tests.release.xcconfig */,
+			);
+			name = "Pods-MiraiSDK_Tests";
+			path = "Target Support Files/Pods-MiraiSDK_Tests";
+			sourceTree = "<group>";
+		};
+		EF6AE4985F34704DE83865AE2AE15B41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92DCE497EF20D825CA13C8417B50023B /* MiraiSDK */,
+				E62D75573432BE7BE079543FBBFF7C8D /* Pods-MiraiSDK_Example */,
+				10B40DF4C2A34A1AB9B822A03BE96806 /* Pods-MiraiSDK_Tests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC91F1649DC6F83A3F0AAC773D96C061 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				22270B9585339AA53F8294D9B86BE270 /* MiraiSDK.modulemap */,
+				9200397CA5D35B3AE16A858CBCB74217 /* MiraiSDK-dummy.m */,
+				86127D0007A643568B3C760BB1A81A81 /* MiraiSDK-Info.plist */,
+				78C63E9AB43B8A4830D881AA0585007C /* MiraiSDK-prefix.pch */,
+				54986AE42687F7DE0FE08CB7C1C82C3C /* MiraiSDK-umbrella.h */,
+				F82D8095C4BB98B32C318B09646F3030 /* MiraiSDK.debug.xcconfig */,
+				12338C69BC3DFBC2CF704356697063C5 /* MiraiSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MiraiSDK";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		816E893F71FFD6579FE8B12BD9289152 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B197284996EE31ED5C86912E8A82FCA /* Pods-MiraiSDK_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89C56809E6CDDE797E1EF98B631C97D6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5789B2889BECA10375DC34C96D26398A /* MiraiSDK-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE7E50E83D037088DE33E9DC9E208D5A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1D790C6B083607FCD3EF99E599A4A56 /* Pods-MiraiSDK_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1EF48C7709D750F3F7CDB7FABA9453A3 /* Pods-MiraiSDK_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBA0639B43DC228CB06C8AF598A459FD /* Build configuration list for PBXNativeTarget "Pods-MiraiSDK_Tests" */;
+			buildPhases = (
+				DE7E50E83D037088DE33E9DC9E208D5A /* Headers */,
+				3A90E7EC60129D522687FB6EEC268235 /* Sources */,
+				128522322E7C59CB2A9F8A7DCED6563A /* Frameworks */,
+				51EE6B29B8FBF15D7DF81AADB0BE0AE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE30655035454BAB4A775F0DB406F879 /* PBXTargetDependency */,
+			);
+			name = "Pods-MiraiSDK_Tests";
+			productName = Pods_MiraiSDK_Tests;
+			productReference = 10B40DF4C2A34A1AB9B822A03BE96806 /* Pods-MiraiSDK_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+		366F4338B1A9DAA0A39DA6D13082508D /* MiraiSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3A741DC3364217EF4ECCC1A6DC1244B /* Build configuration list for PBXNativeTarget "MiraiSDK" */;
+			buildPhases = (
+				89C56809E6CDDE797E1EF98B631C97D6 /* Headers */,
+				396AA96A49D6BFB18F32D21F1E16640B /* Sources */,
+				A342E208CDFBC6546318A4FA397E867B /* Frameworks */,
+				160043E225B8B25C50BB17AE050A3FBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MiraiSDK;
+			productName = MiraiSDK;
+			productReference = 92DCE497EF20D825CA13C8417B50023B /* MiraiSDK */;
+			productType = "com.apple.product-type.framework";
+		};
+		428274D6053D8EA14E3E7BB804F78FBF /* Pods-MiraiSDK_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B6CCBE92E37DB26D7F545875F0DEE71 /* Build configuration list for PBXNativeTarget "Pods-MiraiSDK_Example" */;
+			buildPhases = (
+				816E893F71FFD6579FE8B12BD9289152 /* Headers */,
+				0B4A8393BDE828A8E5C233B377C0AEE0 /* Sources */,
+				C889E65D9B6F539BE360CFC394448133 /* Frameworks */,
+				15D4EFCD6B3F1F957B63D87F3C4B6E8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9D68B5B58D332A10D79CD6C174FED25 /* PBXTargetDependency */,
+			);
+			name = "Pods-MiraiSDK_Example";
+			productName = Pods_MiraiSDK_Example;
+			productReference = E62D75573432BE7BE079543FBBFF7C8D /* Pods-MiraiSDK_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = EF6AE4985F34704DE83865AE2AE15B41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				366F4338B1A9DAA0A39DA6D13082508D /* MiraiSDK */,
+				428274D6053D8EA14E3E7BB804F78FBF /* Pods-MiraiSDK_Example */,
+				1EF48C7709D750F3F7CDB7FABA9453A3 /* Pods-MiraiSDK_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		15D4EFCD6B3F1F957B63D87F3C4B6E8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		160043E225B8B25C50BB17AE050A3FBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51EE6B29B8FBF15D7DF81AADB0BE0AE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B4A8393BDE828A8E5C233B377C0AEE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				726DDCAD2549CAF9581E1728A7E7F7AB /* Pods-MiraiSDK_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		396AA96A49D6BFB18F32D21F1E16640B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F382C8240784EBF670EE04291C259DA2 /* MiraiSDK-dummy.m in Sources */,
+				3E32657FE49FF0B06FACB0E0CCBF5FA8 /* ReplaceMe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A90E7EC60129D522687FB6EEC268235 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B41D2AE4D77A3953B4D491B4E0327F0 /* Pods-MiraiSDK_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE30655035454BAB4A775F0DB406F879 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-MiraiSDK_Example";
+			target = 428274D6053D8EA14E3E7BB804F78FBF /* Pods-MiraiSDK_Example */;
+			targetProxy = 2B21914280EDC17134BDE544CF80303F /* PBXContainerItemProxy */;
+		};
+		F9D68B5B58D332A10D79CD6C174FED25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MiraiSDK;
+			target = 366F4338B1A9DAA0A39DA6D13082508D /* MiraiSDK */;
+			targetProxy = 41F5EBAA638B2263F07FC43AAB5407CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		037927BA0776057AD901AAB4C2904375 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6297C504A0377B2FA3FEA8304462E64B /* Pods-MiraiSDK_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MiraiSDK_Tests/Pods-MiraiSDK_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MiraiSDK_Tests/Pods-MiraiSDK_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		12E33BB8C6D14009445B80B1D0DB7721 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AB313333627455E1F89245C130C33C9 /* Pods-MiraiSDK_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MiraiSDK_Example/Pods-MiraiSDK_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MiraiSDK_Example/Pods-MiraiSDK_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		147512B3DE222F4097A398B844C5FCDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12338C69BC3DFBC2CF704356697063C5 /* MiraiSDK.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MiraiSDK/MiraiSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MiraiSDK/MiraiSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MiraiSDK/MiraiSDK.modulemap";
+				PRODUCT_MODULE_NAME = MiraiSDK;
+				PRODUCT_NAME = MiraiSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		151FDD3718460896B1E31DA84F31348E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93E32EE61D3128CF337C0BF5E78612A6 /* Pods-MiraiSDK_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MiraiSDK_Example/Pods-MiraiSDK_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MiraiSDK_Example/Pods-MiraiSDK_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		4D1E78B893B53B666620D9064CF601B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9BDDFFD80994DDBDF2338B5A76D6EE4 /* Pods-MiraiSDK_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MiraiSDK_Tests/Pods-MiraiSDK_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MiraiSDK_Tests/Pods-MiraiSDK_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8CF3D05A4D197B06A49F1E0F250A0A7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F82D8095C4BB98B32C318B09646F3030 /* MiraiSDK.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MiraiSDK/MiraiSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MiraiSDK/MiraiSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MiraiSDK/MiraiSDK.modulemap";
+				PRODUCT_MODULE_NAME = MiraiSDK;
+				PRODUCT_NAME = MiraiSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B6CCBE92E37DB26D7F545875F0DEE71 /* Build configuration list for PBXNativeTarget "Pods-MiraiSDK_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				151FDD3718460896B1E31DA84F31348E /* Debug */,
+				12E33BB8C6D14009445B80B1D0DB7721 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBA0639B43DC228CB06C8AF598A459FD /* Build configuration list for PBXNativeTarget "Pods-MiraiSDK_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D1E78B893B53B666620D9064CF601B1 /* Debug */,
+				037927BA0776057AD901AAB4C2904375 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3A741DC3364217EF4ECCC1A6DC1244B /* Build configuration list for PBXNativeTarget "MiraiSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CF3D05A4D197B06A49F1E0F250A0A7B /* Debug */,
+				147512B3DE222F4097A398B844C5FCDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
