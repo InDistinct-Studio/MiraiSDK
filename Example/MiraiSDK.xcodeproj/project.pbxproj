@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0EF6DF97E8BB5A0E0F4938B5 /* MiraiSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MiraiSDK.podspec; path = ../MiraiSDK.podspec; sourceTree = "<group>"; };
+		0EF6DF97E8BB5A0E0F4938B5 /* MiraiSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MiraiSDK.podspec; path = ../MiraiSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1E6CA3D2EAB99DCBB6D73C83 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		47FA553753D13ADCF35EB252 /* Pods_MiraiSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiraiSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B02D44FC042604F0429C56A /* Pods_MiraiSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiraiSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
