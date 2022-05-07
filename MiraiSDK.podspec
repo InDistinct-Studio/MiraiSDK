@@ -32,15 +32,12 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '11.0'
   s.swift_versions = '5.0'
   s.static_framework = true
-     
-  s.source_files = 'MiraiSDK/Classes/**/*'
-  s.resource_bundles = {
-    'MiraiSDK' => ['MiraiSDK/Assets/*.model']
-  }
+  s.ios.vendored_frameworks = 'MiraiSDK.xcframework'
+  s.resources = 'MiraiSDK.bundle'
   
-  s.dependency 'GoogleMLKit/TextRecognition'
-  s.dependency 'GoogleMLKit/ObjectDetectionCustom'
-  s.dependency 'GoogleMLKit/ImageLabelingCustom'
+  s.dependency 'GoogleMLKit/TextRecognition', '>=2.3'
+  s.dependency 'GoogleMLKit/ObjectDetectionCustom', '>=2.3'
+  s.dependency 'GoogleMLKit/ImageLabelingCustom', '>=2.3'
   # s.resource_bundles = {
   #   'MiraiSDK' => ['MiraiSDK/Assets/*.png']
   # }
