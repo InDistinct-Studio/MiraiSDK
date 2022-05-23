@@ -3,7 +3,7 @@ use_frameworks!
 platform :ios, '11.0'
 
 target 'MiraiSDK_Example' do
-  pod 'MiraiSDK', '1.0.2'
+  pod 'MiraiSDK', '2.1.1'
 
   target 'MiraiSDK_Tests' do
     inherit! :search_paths
