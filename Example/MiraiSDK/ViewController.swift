@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        Mirai.shareInstance.initialize(apiKey: "ajMbRHTFPtUo9RzpSAMd")
+        Mirai.shareInstance.initialize(apiKey: "NDIfT5TihAj7wVZi178O")
         configure()
     }
 
