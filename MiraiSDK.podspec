@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MiraiSDK'
-  s.version          = '2.4.0'
+  s.version          = '3.0.0'
   s.summary          = 'MiraiSDK detect and verify Thai national ID cards.'
 
 # This description is used to generate tags and improve search results.
@@ -26,18 +26,20 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'northanapon' => 'nor.thanapon@gmail.com' }
-  s.source           = { :http => 'https://github.com/InDistinct-Studio/MiraiSDK/releases/download/2.4.0/MiraiSDK-v2.4.0.zip' }
+  s.source           = { :http => 'https://github.com/InDistinct-Studio/MiraiSDK/releases/download/3.0.0/MiraiSDK-v3.0.0.zip' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '12.0'
   s.swift_versions = '5.0'
   s.static_framework = true
   s.ios.vendored_frameworks = 'MiraiSDK.xcframework'
   s.resources = 'MiraiSDK.bundle'
   
-  s.dependency 'GoogleMLKit/TextRecognition', '>=2.3'
-  s.dependency 'GoogleMLKit/ObjectDetectionCustom', '>=2.3'
-  s.dependency 'GoogleMLKit/ImageLabelingCustom', '>=2.3'
+  s.dependency 'GoogleMLKit/TextRecognition'
+  s.dependency 'GoogleMLKit/ObjectDetectionCustom'
+  s.dependency 'GoogleMLKit/ImageLabelingCustom'
+  s.dependency 'GoogleMLKit/FaceDetection'
+  s.dependency 'MediaPipeTasksVision'
   # s.resource_bundles = {
   #   'MiraiSDK' => ['MiraiSDK/Assets/*.png']
   # }
