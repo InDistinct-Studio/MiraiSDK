@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        Mirai.shareInstance.initialize(apiKey: "ajMbRHTFPtUo9RzpSAMd")
+        Mirai.shareInstance.initialize(apiKey: "ajMbRHTFPtUo9RzpSAMd", options: ["face-actions"])
         configure()
         let labelTap = UITapGestureRecognizer(target: self, action: #selector(self.resetFaceScreening(_:)))
         self.lbl.isUserInteractionEnabled = true
@@ -41,7 +41,7 @@ class ViewController: UIViewController {
     @objc func resetFaceScreening(_ sender: UITapGestureRecognizer) {
         Mirai.shareInstance.initFaceScreeningState()
         self.extectedAction = ACTIONS.randomElement()!
-//        self.extectedAction = .LEFT_RIGHT
+//        self.extectedAction = .LEFT
         initFirstFaceStage = true
         initSecondFaceStage = false
     }
@@ -90,8 +90,8 @@ class ViewController: UIViewController {
         cameraPreviewLayer?.frame = view.layer.frame
         
         if (currentDevice == frontFacingCamera) {
-            cameraPreviewLayer?.connection?.automaticallyAdjustsVideoMirroring = false;
-            cameraPreviewLayer?.connection?.isVideoMirrored = false;
+//            cameraPreviewLayer?.connection?.automaticallyAdjustsVideoMirroring = true;
+//            cameraPreviewLayer?.connection?.isVideoMirrored = true;
         }
         
         
@@ -165,9 +165,13 @@ extension ViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
             
 //            print("-----------------Face Screening: \(String(describing: extectedAction))-------------------")
             let state = Mirai.shareInstance.twoStageCheckFace(sampleBuffer: sampleBuffer, cameraPosition: self.currentDevice.position, expectedAction: extectedAction, idCardResult: nil, config: faceScreeningConfig)
+            
             if (ACTIONS.contains(state.stage) && !initSecondFaceStage) {
                 Mirai.shareInstance.initFaceScreeningSecondStage()
                 initSecondFaceStage = true
+            }
+            if (state.stage == .FINISH) {
+                print(state)
             }
 //            print("- Current required action: \(String(describing: state.stage))")
             DispatchQueue.main.async {
@@ -194,7 +198,7 @@ extension ViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
                 self.lbl.lineBreakMode = .byWordWrapping
                 self.lbl.numberOfLines = 10
             }
-            usleep(100000)
+            usleep(50000)
 //            print("-----------------Face-------------------")
 //            let faceResult = Mirai.shareInstance.detectFaces(sampleBuffer: sampleBuffer, cameraPosition: self.currentDevice.position, idCardResult: nil)
 //

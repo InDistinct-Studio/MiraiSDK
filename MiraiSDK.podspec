@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MiraiSDK'
-  s.version          = '3.0.0'
+  s.version          = '3.0.1'
   s.summary          = 'MiraiSDK detect and verify Thai national ID cards.'
 
 # This description is used to generate tags and improve search results.
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'northanapon' => 'nor.thanapon@gmail.com' }
-  s.source           = { :http => 'https://github.com/InDistinct-Studio/MiraiSDK/releases/download/3.0.0/MiraiSDK-v3.0.0.zip' }
+  s.source           = { :http => 'https://github.com/InDistinct-Studio/MiraiSDK/releases/download/3.0.1/MiraiSDK-v3.0.1.zip' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '12.0'
