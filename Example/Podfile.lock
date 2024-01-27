@@ -1,19 +1,22 @@
 PODS:
-  - GoogleDataTransport (9.1.4):
+  - GoogleDataTransport (9.3.0):
     - GoogleUtilities/Environment (~> 7.7)
     - nanopb (< 2.30910.0, >= 2.30908.0)
     - PromisesObjC (< 3.0, >= 1.2)
-  - GoogleMLKit/ImageLabelingCustom (3.0.0):
+  - GoogleMLKit/FaceDetection (4.0.0):
     - GoogleMLKit/MLKitCore
-    - MLKitImageLabelingCustom (~> 2.0.0)
-  - GoogleMLKit/MLKitCore (3.0.0):
-    - MLKitCommon (~> 6.0.0)
-  - GoogleMLKit/ObjectDetectionCustom (3.0.0):
+    - MLKitFaceDetection (~> 3.0.0)
+  - GoogleMLKit/ImageLabelingCustom (4.0.0):
     - GoogleMLKit/MLKitCore
-    - MLKitObjectDetectionCustom (~> 2.0.0)
-  - GoogleMLKit/TextRecognition (3.0.0):
+    - MLKitImageLabelingCustom (~> 3.0.0)
+  - GoogleMLKit/MLKitCore (4.0.0):
+    - MLKitCommon (~> 9.0.0)
+  - GoogleMLKit/ObjectDetectionCustom (4.0.0):
     - GoogleMLKit/MLKitCore
-    - MLKitTextRecognition (~> 1.4.0-beta4)
+    - MLKitObjectDetectionCustom (~> 3.0.0)
+  - GoogleMLKit/TextRecognition (4.0.0):
+    - GoogleMLKit/MLKitCore
+    - MLKitTextRecognition (~> 2.0.0)
   - GoogleToolboxForMac/DebugUtils (2.3.2):
     - GoogleToolboxForMac/Defines (= 2.3.2)
   - GoogleToolboxForMac/Defines (2.3.2)
@@ -26,74 +29,79 @@ PODS:
     - GoogleToolboxForMac/Defines (= 2.3.2)
     - "GoogleToolboxForMac/NSString+URLArguments (= 2.3.2)"
   - "GoogleToolboxForMac/NSString+URLArguments (2.3.2)"
-  - GoogleUtilities/Environment (7.7.0):
+  - GoogleUtilities/Environment (7.12.0):
     - PromisesObjC (< 3.0, >= 1.2)
-  - GoogleUtilities/Logger (7.7.0):
+  - GoogleUtilities/Logger (7.12.0):
     - GoogleUtilities/Environment
-  - GoogleUtilities/UserDefaults (7.7.0):
+  - GoogleUtilities/UserDefaults (7.12.0):
     - GoogleUtilities/Logger
   - GoogleUtilitiesComponents (1.1.0):
     - GoogleUtilities/Logger
-  - GTMSessionFetcher/Core (1.7.2)
-  - MiraiSDK (1.0.2):
-    - GoogleMLKit/ImageLabelingCustom (>= 2.3)
-    - GoogleMLKit/ObjectDetectionCustom (>= 2.3)
-    - GoogleMLKit/TextRecognition (>= 2.3)
-  - MLImage (1.0.0-beta2)
-  - MLKitCommon (6.0.0):
+  - GTMSessionFetcher/Core (2.3.0)
+  - MediaPipeTasksCommon (0.10.9)
+  - MediaPipeTasksVision (0.10.9):
+    - MediaPipeTasksCommon (= 0.10.9)
+  - MiraiSDK (3.0.1):
+    - GoogleMLKit/FaceDetection
+    - GoogleMLKit/ImageLabelingCustom
+    - GoogleMLKit/ObjectDetectionCustom
+    - GoogleMLKit/TextRecognition
+    - MediaPipeTasksVision
+  - MLImage (1.0.0-beta4)
+  - MLKitCommon (9.0.0):
     - GoogleDataTransport (~> 9.0)
     - GoogleToolboxForMac/Logger (~> 2.1)
     - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
     - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
     - GoogleUtilities/UserDefaults (~> 7.0)
     - GoogleUtilitiesComponents (~> 1.0)
-    - GTMSessionFetcher/Core (~> 1.1)
-    - Protobuf (~> 3.12)
-  - MLKitImageLabelingCommon (4.0.0):
-    - MLKitCommon (~> 6.0)
-    - MLKitVision (~> 4.0)
-  - MLKitImageLabelingCustom (2.0.0):
-    - MLKitCommon (~> 6.0)
-    - MLKitImageLabelingCommon (~> 4.0)
-    - MLKitVision (~> 4.0)
-    - MLKitVisionKit (~> 5.0)
-  - MLKitObjectDetectionCommon (4.0.0):
-    - MLKitCommon (~> 6.0)
-    - MLKitVision (~> 4.0)
-  - MLKitObjectDetectionCustom (2.0.0):
-    - MLKitCommon (~> 6.0)
-    - MLKitObjectDetectionCommon (~> 4.0)
-    - MLKitVision (~> 4.0)
-    - MLKitVisionKit (~> 5.0)
-  - MLKitTextRecognition (1.4.0-beta4):
-    - MLKitCommon (~> 6.0)
-    - MLKitTextRecognitionCommon (= 1.0.0-beta4)
-    - MLKitVision (~> 4.0)
-  - MLKitTextRecognitionCommon (1.0.0-beta4):
-    - MLKitCommon (~> 6.0)
-    - MLKitVision (~> 4.0)
-  - MLKitVision (4.0.0):
+    - GTMSessionFetcher/Core (< 3.0, >= 1.1)
+  - MLKitFaceDetection (3.0.0):
+    - MLKitCommon (~> 9.0)
+    - MLKitVision (~> 5.0)
+  - MLKitImageLabelingCommon (5.0.0):
+    - MLKitCommon (~> 9.0)
+    - MLKitVision (~> 5.0)
+  - MLKitImageLabelingCustom (3.0.0):
+    - MLKitCommon (~> 9.0)
+    - MLKitImageLabelingCommon (~> 5.0)
+    - MLKitVision (~> 5.0)
+    - MLKitVisionKit (~> 6.0)
+  - MLKitObjectDetectionCommon (5.0.0):
+    - MLKitCommon (~> 9.0)
+    - MLKitVision (~> 5.0)
+  - MLKitObjectDetectionCustom (3.0.0):
+    - MLKitCommon (~> 9.0)
+    - MLKitObjectDetectionCommon (~> 5.0)
+    - MLKitVision (~> 5.0)
+    - MLKitVisionKit (~> 6.0)
+  - MLKitTextRecognition (2.0.0):
+    - MLKitCommon (~> 9.0)
+    - MLKitTextRecognitionCommon (= 1.0.0)
+    - MLKitVision (~> 5.0)
+  - MLKitTextRecognitionCommon (1.0.0):
+    - MLKitCommon (~> 9.0)
+    - MLKitVision (~> 5.0)
+  - MLKitVision (5.0.0):
     - GoogleToolboxForMac/Logger (~> 2.1)
     - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
-    - GTMSessionFetcher/Core (~> 1.1)
-    - MLImage (= 1.0.0-beta2)
-    - MLKitCommon (~> 6.0)
-    - Protobuf (~> 3.12)
-  - MLKitVisionKit (5.0.0):
-    - MLKitCommon (~> 6.0)
-    - MLKitImageLabelingCommon (~> 4.0)
-    - MLKitObjectDetectionCommon (~> 4.0)
-    - MLKitVision (~> 4.0)
-  - nanopb (2.30909.0):
-    - nanopb/decode (= 2.30909.0)
-    - nanopb/encode (= 2.30909.0)
-  - nanopb/decode (2.30909.0)
-  - nanopb/encode (2.30909.0)
-  - PromisesObjC (2.1.0)
-  - Protobuf (3.20.1)
+    - GTMSessionFetcher/Core (< 3.0, >= 1.1)
+    - MLImage (= 1.0.0-beta4)
+    - MLKitCommon (~> 9.0)
+  - MLKitVisionKit (6.0.0):
+    - MLKitCommon (~> 9.0)
+    - MLKitImageLabelingCommon (~> 5.0)
+    - MLKitObjectDetectionCommon (~> 5.0)
+    - MLKitVision (~> 5.0)
+  - nanopb (2.30909.1):
+    - nanopb/decode (= 2.30909.1)
+    - nanopb/encode (= 2.30909.1)
+  - nanopb/decode (2.30909.1)
+  - nanopb/encode (2.30909.1)
+  - PromisesObjC (2.3.1)
 
 DEPENDENCIES:
-  - MiraiSDK (= 1.0.2)
+  - MiraiSDK (= 3.0.1)
 
 SPEC REPOS:
   trunk:
@@ -103,9 +111,12 @@ SPEC REPOS:
     - GoogleUtilities
     - GoogleUtilitiesComponents
     - GTMSessionFetcher
+    - MediaPipeTasksCommon
+    - MediaPipeTasksVision
     - MiraiSDK
     - MLImage
     - MLKitCommon
+    - MLKitFaceDetection
     - MLKitImageLabelingCommon
     - MLKitImageLabelingCustom
     - MLKitObjectDetectionCommon
@@ -116,30 +127,31 @@ SPEC REPOS:
     - MLKitVisionKit
     - nanopb
     - PromisesObjC
-    - Protobuf
 
 SPEC CHECKSUMS:
-  GoogleDataTransport: 5fffe35792f8b96ec8d6775f5eccd83c998d5a3b
-  GoogleMLKit: 69ae034947ca5220c842a3096d574765c9b6b8b8
+  GoogleDataTransport: 57c22343ab29bc686febbf7cbb13bad167c2d8fe
+  GoogleMLKit: 2bd0dc6253c4d4f227aad460f69215a504b2980e
   GoogleToolboxForMac: 8bef7c7c5cf7291c687cf5354f39f9db6399ad34
-  GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
+  GoogleUtilities: 0759d1a57ebb953965c2dfe0ba4c82e95ccc2e34
   GoogleUtilitiesComponents: 679b2c881db3b615a2777504623df6122dd20afe
-  GTMSessionFetcher: 5595ec75acf5be50814f81e9189490412bad82ba
-  MiraiSDK: bc71f3d99a1b96fdf619b4838e67e4ab2ab0f48c
-  MLImage: a454f9f8ecfd537783a12f9488f5be1a68820829
-  MLKitCommon: 534d2b24c1f8676db247bd7ee5733eca1b52968b
-  MLKitImageLabelingCommon: 9906b40bc1ae6dc8fbc7cfd4e6025fda8288f2eb
-  MLKitImageLabelingCustom: 79f90fa55bddd01eae5aded1b2ac2a3f39b926cc
-  MLKitObjectDetectionCommon: 62ad2aefeb356af309747f3eb35a8db3473ef91d
-  MLKitObjectDetectionCustom: 6a977f48558f7aea7a8e1d8babca62f14a893ce2
-  MLKitTextRecognition: d106486fe8e835db45f78e7a58beee584292b6f5
-  MLKitTextRecognitionCommon: 2b6c596279febd4810e289ed4d9a9c6993fad64a
-  MLKitVision: 5e393f4d8a28be57b6384a3665f5f041deff9c2e
-  MLKitVisionKit: a0e53bf59de5ad3cb54ea6e51994648cb45c3a91
-  nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
-  PromisesObjC: 99b6f43f9e1044bd87a95a60beff28c2c44ddb72
-  Protobuf: b60ec2f51ad74765f44d0c09d2e0579d7de21745
+  GTMSessionFetcher: 3a63d75eecd6aa32c2fc79f578064e1214dfdec2
+  MediaPipeTasksCommon: c97fece495f7d4d454230d7894052aa73830244c
+  MediaPipeTasksVision: a0a929c7818c142078e93bc271720100f53e3c3d
+  MiraiSDK: 4b5f73e5743387baa4a0fcce2b00921fc0af1d35
+  MLImage: 7bb7c4264164ade9bf64f679b40fb29c8f33ee9b
+  MLKitCommon: c1b791c3e667091918d91bda4bba69a91011e390
+  MLKitFaceDetection: 4981488f71ea8ed718cda692a29ab562637d9ae5
+  MLKitImageLabelingCommon: 79ffbc10bd0c3a6407aa423aeb076f76a8883e15
+  MLKitImageLabelingCustom: 0e771d063bb920cd4aa751469d23b722a9ef0056
+  MLKitObjectDetectionCommon: 424e43365d7ef7dd7005a4799e5303eeb4287fec
+  MLKitObjectDetectionCustom: ed2376de1d1893e761a843f3490169c7c4de9633
+  MLKitTextRecognition: 9ff0c843f2723d31d4bdd0c0d17a0a18382ed23e
+  MLKitTextRecognitionCommon: 0d48930fee25cce9d52d0ba217490d4797061aa2
+  MLKitVision: 8baa5f46ee3352614169b85250574fde38c36f49
+  MLKitVisionKit: 5b5472d40ffc143bda693ba20a3cff44fe627d41
+  nanopb: d4d75c12cd1316f4a64e3c6963f879ecd4b5e0d5
+  PromisesObjC: c50d2056b5253dadbd6c2bea79b0674bd5a52fa4
 
-PODFILE CHECKSUM: b277e337a4c91a67bf02c7dfa60dfab5933fb186
+PODFILE CHECKSUM: 3870254ceddaebda2ecdce98ea3a8e5b5ddc6e62
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.14.3
